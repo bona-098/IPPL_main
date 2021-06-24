@@ -55,6 +55,12 @@
             <i class="fas fa-circle nav-icon"></i>
             <p>Artikel</p>
           </a>
+        </li>
+        <li class="nav-item mt-5 pt-5">
+          <a href="/articlead" class="nav-link">
+            {{-- <i class="fas fa-circle nav-icon"></i> --}}
+            <p class="mt-5">Keluar</p>
+          </a>
         </li>  
         @else
         <li class="nav-item">

@@ -63,4 +63,3 @@
 		</div>
 	</section>
 </x-guest-layout>
-@include('layouts.footer')

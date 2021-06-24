@@ -16,9 +16,9 @@ class ArticleController extends Controller
     public function index()
     {
         
-        $articlead = Article::orderBy('id','asc')->paginate(5);
+        $articlead = Article::orderBy('id','asc')->paginate(500);
         return view('admin.article.adminarticle',compact('articlead'))
-                ->with('i',(request()->input('page',1) -1)*5);
+                ->with('i',(request()->input('page',1) -1)*500);
         
         
    }

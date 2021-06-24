@@ -49,7 +49,7 @@ class PsikologAdminController extends Controller
             'biaya_konsultasi' => Request()->biaya,
             'no_rekening' => Request()->no_rek,
             'tipe_bank' => Request()->tipe_bank,
-            'kategori_id' => Request()->kategori,
+            'kategori' => Request()->kategori,
             'foto_psikolog' => $fileName
         ]);
         echo Request()->username;

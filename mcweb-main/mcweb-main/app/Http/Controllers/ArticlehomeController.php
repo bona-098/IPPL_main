@@ -9,9 +9,9 @@ class ArticlehomeController extends Controller
     public function index()
     {
         
-        $article = Article::orderBy('id','asc')->paginate(5);
+        $article = Article::orderBy('id','asc')->paginate(500);
         return view('article',compact('article'))
-                ->with('i',(request()->input('page',1) -1)*5);
+                ->with('i',(request()->input('page',1) -1)*500);
         
    }
 
