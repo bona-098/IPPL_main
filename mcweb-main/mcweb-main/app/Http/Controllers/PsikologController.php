@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\psikolog;
 use Illuminate\Http\Request;
-
 class PsikologController extends Controller
 {
     /**
@@ -11,6 +10,10 @@ class PsikologController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         // $user = User::get('foto_profile');
